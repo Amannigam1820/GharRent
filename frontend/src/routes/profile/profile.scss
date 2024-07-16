@@ -1,0 +1,87 @@
+.profilePage{
+    display: flex;
+    height: 100%;
+
+    .details{
+        flex: 3;
+        overflow-y: scroll;
+        padding-bottom: 50px;
+
+        .wrapper{
+            padding-right: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h1{
+                    font-weight: lighter;
+                    font-size: 22px;
+                }
+                button{
+                    padding: 6px 12px;
+                    background-color: #fece51;
+                    cursor: pointer;
+                    border: none;
+                    transition: all 0.4s ease;
+                    &:hover {
+                        scale: 1.05;
+                        border-radius: 10px;
+                      }
+                }
+            }
+            
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                span{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+                button{
+                    width: 80px;
+                    background-color: #fece51;
+                    border: none;
+                    color: white;
+                    padding: 8px 16px;
+                    transition: all 0.4s ease;
+                    margin-left: 3px;
+                    cursor: pointer;
+                    &:hover {
+                        scale: 1.05;
+                        border-radius: 10px;
+                      }
+
+                }
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+            }
+        }
+    }
+
+    .chatContainer{
+        flex: 2;
+        background-color: #fcf5f5;
+        height: 100%;
+
+        .wrapper{
+            padding: 0px 15px;
+            height: 100%;
+
+        }
+    }
+}
